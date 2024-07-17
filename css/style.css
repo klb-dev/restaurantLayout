@@ -243,10 +243,10 @@ section div a + a {
     height: 70%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 0;
-    gap: 1em;
+    gap: 5px;
     margin: 0 auto;
     flex-shrink: -1;
 }
@@ -256,3 +256,60 @@ section div a + a {
     width: 20%;
     height: 30%;
 }
+
+.discount {
+    position: relative;
+}
+
+.overlay {
+    width: 16%;
+    height: 21%;
+    position: absolute;
+    top: 127.5em;
+    left: 12.25em;
+    background-color: rgba(51, 51, 51, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.overlay button {
+    position: absolute;
+    width: 20%;
+    background: #ffa500;
+    color: #fff;
+    border: none;
+    padding: .75em 1em;
+    border-radius: 20px;
+    align-self: flex-end;
+    opacity: .4;
+    top: 1em;
+    right: 1em;
+
+}
+
+.overlay h4 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.overlay div {
+    color: #ffa500;
+    text-align: center;
+    margin-top: -1em;
+    margin-bottom: -1em;
+}
+
+.overlay a {
+    width: 40%;
+    text-decoration: none;
+    color: #fff;
+    background: #ffa500;
+    padding: .75em 1em;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+
