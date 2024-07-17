@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+main {
+    height: 55em;
+    background: url("/images/backgroundImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+}
+
+/* navigation/header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(250,250,250,0.8);
+    padding: .5em 0;
+}
+
+header > img {
+    width: 5%;
+    margin-left: 2em;
+}
+
+nav > img {
+    width: 5%;
+}
+
+nav > img + img {
+    width: 3%;
+    margin-right: 4em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* hero content */
+
+.hero-wrapper {
+    width: 50%;
+    height: 90%;
+}
+
+h1 {
+    font-family: 'Caudex', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    color: #222;
+    margin-top: 2.5em;
+    margin-left: 2em;
+}
+
+h1 span {
+    display: block;
+}
+
+form {
+    margin-top: 2em;
+    margin-left: 10em;
+    position: relative;
+}
+
+form input {
+    width: 35em;
+    height: 2em;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px 0 0 5px;
+    padding: 1.5em .5em;
+}
+
+form a {
+    text-decoration: none;
+    color: #fff;
+    background: #ffa500;
+    padding: .75em 1em;
+    border-radius: 0 5px 5px 0;
+    margin-left: -5px;
+}
+
+form label i {
+    position: absolute;
+    top: .8em;
+    left: 1em;
+    color: #d7d7d7;
+}
+
+form input::placeholder{
+    color: #d7d7d7;
+    text-indent: 30px;
+}
+
+form label a select {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+}
+
+main section > section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    width: 40%;
+    margin-left: 8em;
+}
+
+main section > section i {
+    color: #ffa500;
+}
+
+/* about us */
+
+.aboutUs-wrapper {
+    width: 100%;
+    height: 55em;
+    background-image: url("/images/foodSpread.jpeg");
+    background-size: cover;
+    margin-top: -3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.aboutUs-wrapper div {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 15em;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffa500;
+    margin-top: 2em;
+}
