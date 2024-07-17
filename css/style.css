@@ -60,7 +60,7 @@ nav a {
 h1 {
     font-family: 'Caudex', sans-serif;
     font-size: 5em;
-    font-weight: bold;
+    font-weight: 900;
     color: #222;
     margin-top: 2.5em;
     margin-left: 2em;
@@ -84,7 +84,8 @@ form input {
     padding: 1.5em .5em;
 }
 
-form a {
+form a,
+section div a {
     text-decoration: none;
     color: #fff;
     background: #ffa500;
@@ -138,14 +139,120 @@ main section > section i {
 }
 
 .aboutUs-wrapper div {
-    width: 40%;
+    width: 50%;
+    height: 20em;
     margin: 0 auto;
     margin-top: 15em;
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 2em;
 }
 
-h3{
+section div h3{
     font-size: 1.5em;
     font-weight: bold;
     color: #ffa500;
-    margin-top: 2em;
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+
+section div h2 {
+    font-family: 'Caudex', sans-serif;
+    font-size: 4.5em;
+    font-weight: 900;
+    color: #222;
+    letter-spacing: 1.5px;
+    line-height: 1.15;
+}
+
+section div p {
+    font-size: 1.2em;
+    color: #222;
+    margin-top: 1em;
+    line-height: 1.5;
+    margin-bottom: 3em;
+    letter-spacing: 1.5;
+}
+
+section div a {
+    text-decoration: none;
+    color: #fff;
+    background: #ffa500;
+    padding: .75em 1em;
+    border-radius: 5px 0 0 5px;
+}
+
+section div a + a {
+    background-color: rgba(255, 165, 0, .5);
+    color: #fff;
+    border-radius: 0, 5px, 5px, 0;
+}
+
+
+/* online ordering */
+
+.online {
+    width: 100%;
+    height: 55em;
+    background-color: #e6e6e6;
+}
+
+.online h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffa500;
+    text-align: center;
+    padding-top: 3em;
+}
+
+.online h2 {
+    font-family: 'Caudex', sans-serif;
+    font-size: 4.5em;
+    font-weight: 900;
+    color: #222;
+    letter-spacing: 1.5px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.online nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.online nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 2em;
+    padding: 0;
+}
+
+.online nav a:hover {
+    color: #ffa500;
+    border-bottom: 1px solid #ffa500;
+    text-align: center;
+}
+
+.image-wrapper {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 1em;
+    margin: 0 auto;
+    flex-shrink: -1;
+}
+
+
+.image-wrapper img {
+    width: 20%;
+    height: 30%;
 }
