@@ -3,7 +3,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
+/* ******* */
+/* desktop */
+/* ******* */
 
 main {
     height: 55em;
@@ -129,7 +131,7 @@ main section > section i {
 
 .aboutUs-wrapper {
     width: 100%;
-    height: 55em;
+    height: 60em;
     background-image: url("/images/foodSpread.jpeg");
     background-size: cover;
     margin-top: -3em;
@@ -257,25 +259,24 @@ section div a + a {
     height: 30%;
 }
 
-.discount {
+/* .discount {
     position: relative;
-}
+} */
 
-.overlay {
+/* .overlay {
     width: 16%;
-    height: 21%;
+    height: 24.5%;
     position: absolute;
-    top: 127.5em;
-    left: 12.25em;
+    top: 100%;
+    left: 10.25em;
     background-color: rgba(51, 51, 51, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
+} */
 
-.overlay button {
+/* .overlay button {
     position: absolute;
-    width: 20%;
     background: #ffa500;
     color: #fff;
     border: none;
@@ -286,16 +287,16 @@ section div a + a {
     top: 1em;
     right: 1em;
 
-}
+} */
 
-.overlay h4 {
+/* .overlay h4 {
     color: #fff;
     font-size: 2rem;
     text-align: center;
     margin-top: 0;
-}
+} */
 
-.overlay div {
+/* .overlay div {
     color: #ffa500;
     text-align: center;
     margin-top: -1em;
@@ -303,13 +304,198 @@ section div a + a {
 }
 
 .overlay a {
-    width: 40%;
     text-decoration: none;
     color: #fff;
     background: #ffa500;
     padding: .75em 1em;
     border-radius: 5px;
     margin: 0 auto;
+} */
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(250,250,250,0.8);
+    padding: 1em 5em;
+}
+
+
+.logo-info,
+.hours-info,
+.contact-info,
+.subscribe-info {
+    width: 25%;
+}
+
+.logo-info img {
+    width: 30%;
+}
+
+.logo-info p {
+    width: 55%;
+    font-size: 1em;
+    margin-top: .5em;
+}
+
+.hours-info,
+.contact-info,
+.subscribe-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.hours-info h3,
+.contact-info h3,
+.subscribe-info h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contact-info p span{
+    color:#ffa500;
+    text-decoration: underline;
+}
+
+.subscribe-info form input {
+    width: 100%;
+    height: 2em;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px 0 0 5px;
+    padding: 1.5em .5em;
+    margin-left: -10rem;
+}
+
+.subscribe-info form a {
+    text-decoration: none;
+    background-color: #fff !important;
+    border-top: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.subscribe-info form input::placeholder{
+    color: #222;
+    text-indent: 0;
+}
+
+.subscribe-info form a i{
+    text-decoration: none;
+    color: #ffa500;
+    font-size: 1.25rem;
+    transform: rotate(-45deg);
+}
+
+.subscribe-info form a i:hover {
+    color: #222;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 500px) {
+    main {
+        height: 60em;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(250,250,250,0.8);
+        padding: .5em 0;
+    }
+
+    header > img {
+        width: 10%;
+        margin-left: 2em;
+    }
+
+    nav > img {
+        width: 10%;
+    }
+
+    nav > img + img {
+        width: 5%;
+        margin-right: 4em;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .hero-wrapper {
+        width: 50%;
+        height: 90%;
+    }
+
+    h1 {
+        font-family: 'Caudex', sans-serif;
+        font-size: 5em;
+        font-weight: 900;
+        color: #222;
+        margin-top: 2.5em;
+        margin-left: 2em;
+    }
+
+    h1 span {
+        display: block;
+    }
+
+    form {
+        margin-top: 2em;
+        margin-left: 10em;
+        position: relative;
+    }
+
+    form input {
+        width: 35em;
+        height: 2em;
+        border: 1px solid #d7d7d7;
+        border-radius: 5px 0 0 5px;
+        padding: 1.5em .5em;
+    }
+
+    form a,
+    section div a {
+        text-decoration: none;
+        color: #fff;
+        background: #ffa500;
+        padding: .75em 1em;
+        border-radius: 0 5px 5px 0;
+        margin-left: -5px;
+    }
+
+    form label i {
+        position: absolute;
+        top: .8em;
+        left: 1em;
+        color: #d7d7d7;
+    }
+
+    form input::placeholder{
+        color: #d7d7d7;
+        text-indent: 30px;
+    }
+
+    form label a select {
+        background-color: #ffa500;
+        color: #fff;
+        border: none;
+    }
 }
 
 
