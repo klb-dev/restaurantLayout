@@ -397,105 +397,132 @@ footer{
 
 /* media queries */
 
-@media screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
     main {
-        height: 60em;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: rgba(250,250,250,0.8);
-        padding: .5em 0;
+        background: no-repeat 30%/auto url("/images/backgroundImage.png");
+        height: 100%
     }
 
     header > img {
-        width: 10%;
-        margin-left: 2em;
+        width: 30%;
+        margin: 0 auto;
     }
 
-    nav > img {
-        width: 10%;
-    }
-
-    nav > img + img {
-        width: 5%;
-        margin-right: 4em;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: #000;
-        font-size: 1em;
-        font-weight: bold;
+    header nav {
+        display: none;
     }
 
     .hero-wrapper {
         width: 50%;
-        height: 90%;
+        height: 100%;
     }
 
     h1 {
         font-family: 'Caudex', sans-serif;
-        font-size: 5em;
+        font-size: 2em;
         font-weight: 900;
         color: #222;
         margin-top: 2.5em;
-        margin-left: 2em;
     }
 
-    h1 span {
-        display: block;
+    main.hero-wrapper form{
+        position: static;
+        margin-left: 0
     }
 
-    form {
-        margin-top: 2em;
-        margin-left: 10em;
-        position: relative;
-    }
 
-    form input {
-        width: 35em;
-        height: 2em;
-        border: 1px solid #d7d7d7;
-        border-radius: 5px 0 0 5px;
-        padding: 1.5em .5em;
+    .hero-wrapper form input {
+        width: 15rem;
     }
 
     form a,
     section div a {
-        text-decoration: none;
-        color: #fff;
-        background: #ffa500;
-        padding: .75em 1em;
-        border-radius: 0 5px 5px 0;
-        margin-left: -5px;
+        display: block;
+        width: 8rem;
+        margin: 1em auto 0;
     }
 
-    form label i {
-        position: absolute;
-        top: .8em;
-        left: 1em;
-        color: #d7d7d7;
+    .social-icons div{
+        margin: 0 2em;
     }
 
-    form input::placeholder{
-        color: #d7d7d7;
-        text-indent: 30px;
+    .social-icons div i {
+        font-size: 1.5em;
+        margin-bottom: .5rem;
     }
 
-    form label a select {
-        background-color: #ffa500;
-        color: #fff;
-        border: none;
+    .social-icons div span {
+        font-size: 1rem;
+        font-weight: 700;
     }
+
+    .aboutUs-wrapper {
+        height: 45rem;
+        background: no-repeat 20%/cover url("/images/foodSpread.jpeg");
+    }
+
+    #about-us >div {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2em;
+        background-color: rgba(255,255,255,1)
+    }
+
+    #about-us h2,
+    #about-us h3 {
+        /* margin: .5rem 0 0 1.5rem; */
+        font-size: 2rem;
+    }
+
+    #about-us p {
+        width: 80%;
+        font-size: 1rem;
+        margin: 1em auto;
+    }
+
+
+    #online {
+        width: 100%;
+        height: 100%;
+        font-size: .5rem;
+        text-align: center;
+        padding-top: 3em;
+    }
+
+
+
+    .online.image-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-wrapper img {
+        width: 60%;
+        height: 30%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-info,
+    .hours-info,
+    .contact-info,
+    .subscribe-info {
+    width: 100%;
 }
 
+.logo-info img {
+    width: 20%;
+}
 
+.subscribe-info form input {
+    width: 100%;
+    height: 2em;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px 0 0 5px;
+    padding: 1.5em .5em;
+    margin-left: 0;
+}
+}
